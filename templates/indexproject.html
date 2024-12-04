@@ -31,11 +31,12 @@
         }
 
         header.feature-box.below {
-            height: 400px;
-            background-color: blue;
-            background-image: url("../static/images/front.png");
+            height: 750px;
+            background-color: blue; /* Fallback color */
+            background-image: url("../static/images/front.gif"); /* GIF background */
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat; /* Prevent tiling */
         }
 
         nav ul {
