@@ -5,12 +5,12 @@ import math
 import time
 import threading  # For playing and stopping alert sound
 import os
-from playsound import playsound  # Import for playing sound
+# from playsound import playsound  # Import for playing sound
 
 # Function to play alert sound in a loop
-def play_alert():
-    while alert_playing:
-        playsound("alert.mp3", block=False)
+# def play_alert():
+    # while alert_playing:
+    #     playsound("alert.mp3", block=False)
 
 # Choose video or camera
 choice = input("Enter '1' for Camera or '2' for Video: ")
@@ -77,15 +77,15 @@ try:
                 if classNames[cls] in ['NO-Hardhat', 'NO-Mask', 'NO-Safety Vest']:
                     alert_triggered = True
 
-        # Handle alert sound
-        if alert_triggered and not alert_playing:
-            alert_playing = True
-            alert_thread = threading.Thread(target=play_alert)
-            alert_thread.start()
-        elif not alert_triggered and alert_playing:
-            alert_playing = False
-            if alert_thread:
-                alert_thread.join()  # Wait for the thread to finish
+        # # Handle alert sound************
+        # if alert_triggered and not alert_playing:
+        #     alert_playing = True
+        #     alert_thread = threading.Thread(target=play_alert)
+        #     alert_thread.start()
+        # elif not alert_triggered and alert_playing:
+        #     alert_playing = False
+        #     if alert_thread:
+        #         alert_thread.join()  # Wait for the thread to finish
 
         # Calculate FPS
         new_frame_time = time.time()

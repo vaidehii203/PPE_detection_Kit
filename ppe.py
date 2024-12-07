@@ -7,9 +7,9 @@ import cvzone
 import math
 import time
 
-# cap = cv2.VideoCapture(0)  # Change camera index if necessary
-# cap.set(3, 1280)  # Set frame width
-# cap.set(4, 720)   # Set frame height
+cap = cv2.VideoCapture(0)  # Change camera index if necessary
+cap.set(3, 1280)  # Set frame width
+cap.set(4, 720)   # Set frame height
 # cap.set(3, 640)
 # cap.set(4, 480)
 
