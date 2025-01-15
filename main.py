@@ -12,7 +12,7 @@ def ppe_detection(file):
         cap.set(4, 720)
     else : 
         cap = cv2.VideoCapture(file)  # For Video
-    model = YOLO("best.pt")
+    model = YOLO("ppt.pt")
 
     classNames = ['Hardhat', 'Mask', 'NO-Hardhat', 'NO-Mask', 'NO-Safety Vest', 'Person', 'Safety Cone',
                 'Safety Vest', 'machinery', 'vehicle']

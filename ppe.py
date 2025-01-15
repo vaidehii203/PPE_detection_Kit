@@ -16,10 +16,10 @@ cap.set(4, 720)   # Set frame height
 # cap = cv2.VideoCapture("../Videos/bikes.mp4") 
 # cap = cv2.VideoCapture("../Videos/people.mp4") 
 
-cap = cv2.VideoCapture("../Videos/ppe-3.mp4")  # For Video
+# cap = cv2.VideoCapture("..")  # For Video
 
-model = YOLO("../Yolo-Weights/yolov8l.pt")
-# model = YOLO("../Yolo-Weights/yolov8n.pt")
+# model = YOLO("../Yolo-Weights/yolov8l.pt")
+model = YOLO("../Yolo-Weights/yolov8n.pt")
 model = YOLO("best.pt")
 
 classNames = ['Hardhat', 'Mask', 'NO-Hardhat', 'NO-Mask', 'NO-Safety Vest', 'Person', 'Safety Cone',

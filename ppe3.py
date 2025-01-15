@@ -17,10 +17,13 @@ choice = input("Enter '1' for Camera or '2' for Video: ")
 
 if choice == '1':
     cap = cv2.VideoCapture(0)  # Open webcam
-    cap.set(3, 640)  # Set frame width
-    cap.set(4, 480)  # Set frame height
+    # cap.set(3, 640)  # Set frame width
+    
+    # cap.set(4, 480)  # Set frame height
+    cap.set(3, 1280)  # Width
+    cap.set(4, 720) 
 elif choice == '2':
-    video_path = input("Enter the path to the video file: ")
+    video_path = input("Enter the path to the video file: " )
     if not os.path.exists(video_path):
         print("Error: Video file not found!")
         exit()
